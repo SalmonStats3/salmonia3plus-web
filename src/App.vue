@@ -8,4 +8,20 @@ import { IonApp, IonRouterOutlet } from '@ionic/vue';
   </IonApp>
 </template>
 
-<style></style>
+<style lang="scss">
+ion-text {
+  font-size: 14px;
+}
+
+ion-app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ion-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  clip-path: circle(50%);
+}
+</style>

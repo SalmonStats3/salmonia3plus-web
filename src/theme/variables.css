@@ -3,9 +3,9 @@ http://ionicframework.com/docs/theming/ */
 
 /* M PLUS 1 Code font */
 :root {
-  --ion-font-family: "M PLUS 1 Code";
+  /* --ion-font-family: "M PLUS 1 Code";
   --ion-monospace-font-family: "M PLUS 1 Code";
-  --ion-default-font-family: "M PLUS 1 Code";
+  --ion-default-font-family: "M PLUS 1 Code"; */
   --ion-frame-max-width: 800px;
 }
 

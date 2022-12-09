@@ -4,11 +4,11 @@ import { RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    component: () => import("../views/HomePage.vue"),
+    component: () => import("../views/Top.vue"),
   },
   {
-    path: "/detail/:id",
-    component: () => import("../views/DetailPage.vue"),
+    path: "/dev",
+    component: () => import("../views/Dev.vue"),
   },
 ];
 
