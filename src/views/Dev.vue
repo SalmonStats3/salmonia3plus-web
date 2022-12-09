@@ -16,7 +16,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n()
 
 function openURL() {
-  window.open("npf0c1afa76bd1a3c9b://session_token=eyJhbGciOiJIUzI1NiJ9.eyJzdDpzY3AiOlswLDgsOSwxNywyM10sImV4cCI6MTczMzUzMTk5NywiaWF0IjoxNjcwNDU5OTk3LCJpc3MiOiJodHRwczovL2FjY291bnRzLm5pbnRlbmRvLmNvbSIsImp0aSI6MTA2MzczMzE0OTIsInN1YiI6IjVhZThmN2E3OGIwY2NhNGQiLCJhdWQiOiI3MWI5NjNjMWI3YjZkMTE5IiwidHlwIjoic2Vzc2lvbl90b2tlbiJ9.XsXMV16Rf4rMHj7CPPesX0SmINp8FZOhFRXmyPVP1kk")
+  window.open("npf0c1afa76bd1a3c9b://session_token=eyJhbGciOiJIUzI1NiJ9.eyJzdDpzY3AiOlswLDgsOSwxNywyM10sImV4cCI6MTczMzUzMTk5NywiaWF0IjoxNjcwNDU5OTk3LCJpc3MiOiJodHRwczovL2FjY291bnRzLm5pbnRlbmRvLmNvbSIsImp0aSI6MTA2MzczMzE0OTIsInN1YiI6IjVhZThmN2E3OGIwY2NhNGQiLCJhdWQiOiI3MWI5NjNjMWI3YjZkMTE5IiwidHlwIjoic2Vzc2lvbl90b2tlbiJ9.XsXMV16Rf4rMHj7CPPesX0SmINp8FZOhFRXmyPVP1kk", "_self")
 }
 </script>
 
