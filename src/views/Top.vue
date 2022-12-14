@@ -35,11 +35,13 @@ const { t } = useI18n()
       </IonImg>
       <h3>{{ t("about.title") }}</h3>
       <IonText>{{ t("about.text") }}</IonText>
+      <h3><a href="faq">{{ t("frequently_asked_question.title") }}</a></h3>
+      <IonText>{{ t("frequently_asked_question.text") }}</IonText>
       <h3>{{ t("liability.title") }}</h3>
       <IonText>{{ t("liability.text") }}</IonText>
-      <h3>{{ t("privacy_policy.title") }}</h3>
+      <h3><a href="/privacy">{{ t("privacy_policy.title") }}</a></h3>
       <IonText>{{ t("privacy_policy.text") }}</IonText>
-      <h3>{{ t("license_agreement.title") }}</h3>
+      <h3><a href="/agreements">{{ t("license_agreement.title") }}</a></h3>
       <IonText>{{ t("license_agreement.text") }}</IonText>
       <h3>{{ t("contact.title") }}</h3>
       <IonText>{{ t("contact.text") }}</IonText>

@@ -2,6 +2,12 @@ title: Salmonia3+
 open_url:
   title: デモ用アカウント
   text: アプリを開く
+verification:
+  title: Open Email
+  text: アプリを開く
+frequently_asked_question:
+  title: よくある質問
+  text: アプリを開く
 about:
   title: 本アプリケーションについて
   text: 本アプリケーションは非公式アプリケーションであり、任天堂株式会社とは一切関係ありません。アプリケーションに関する全てのお問い合わせはアプリ内のサポート連絡先へよろしくお願いします。また、公式サイトの仕様変更により利用できなくなる場合があります。
