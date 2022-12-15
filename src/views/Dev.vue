@@ -30,7 +30,6 @@ function shareURL() {
   window.open(`${identifier}://salmonia3plus?share_account`, "_self")
 }
 
-
 </script>
 
 <template>

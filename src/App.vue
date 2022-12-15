@@ -14,8 +14,11 @@ ion-text {
 }
 
 ion-app {
-  max-width: 600px;
   margin: 0 auto;
+}
+
+.ion-page {
+  max-width: 600px;
 }
 
 ion-img {
