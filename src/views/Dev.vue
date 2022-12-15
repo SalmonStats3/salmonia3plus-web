@@ -19,15 +19,15 @@ const tkgling: string = "eyJhbGciOiJIUzI1NiJ9.eyJzdDpzY3AiOlswLDgsOSwxNywyM10sIm
 const oshake: string = "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzAxNDUyMjksImp0aSI6MTA2MDM4NjI4NTEsInN0OnNjcCI6WzAsOCw5LDE3LDIzXSwidHlwIjoic2Vzc2lvbl90b2tlbiIsImV4cCI6MTczMzIxNzIyOSwiYXVkIjoiNzFiOTYzYzFiN2I2ZDExOSIsImlzcyI6Imh0dHBzOi8vYWNjb3VudHMubmludGVuZG8uY29tIiwic3ViIjoiNDAyMmNlZjg0M2Y1OGM5MSJ9.l8reHGmJ3UsYSW5a2ergz-PjXdNnQphhzKdnogXfUww"
 
 function openURL(token: string) {
-  window.open(`${identifier}://session_token=${token}`, "_self")
+  window.open(`${identifier}://salmonia3plus?session_token=${token}`, "_self")
 }
 
 function backupURL() {
-  window.open(`${identifier}://backup_realm`, "_self")
+  window.open(`${identifier}://salmonia3plus?backup_realm`, "_self")
 }
 
-function shareAccont() {
-  window.open(`${identifier}://share_account`, "_self")
+function shareURL() {
+  window.open(`${identifier}://salmonia3plus?share_account`, "_self")
 }
 
 
@@ -50,10 +50,10 @@ function shareAccont() {
       <h1>開発者向けツール</h1>
       <p>本ツールは開発者及びデバッガー向けのツールです。</p>
       <h2>データベースバックアップ</h2>
-      <IonButton expand="block" shape="round" @click="openURL(tkgling)">バックアップ</IonButton>
+      <IonButton expand="block" shape="round" @click="backupURL">バックアップ</IonButton>
       <p>データベース自体のバックアップを取得するリンクです。アプリがクラッシュして動作しない場合などに使えます。</p>
       <h2>アカウント情報共有</h2>
-      <IonButton expand="block" shape="round" @click="openURL(tkgling)">アカウント情報共有</IonButton>
+      <IonButton expand="block" shape="round" @click="shareURL">アカウント情報共有</IonButton>
       <p>開発者がテストできるようにアカウント情報を共有します。このアカウント情報には以下のものが含まれます。カッコ内は有効期限です。この中で利用するのはセッショントークンです。</p>
       <ul>
         <li>1. ニックネーム</li>
