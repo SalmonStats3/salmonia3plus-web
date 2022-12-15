@@ -14,12 +14,22 @@ import {
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n()
-
+const identifier: string = "npf0c1afa76bd1a3c9b"
 const tkgling: string = "eyJhbGciOiJIUzI1NiJ9.eyJzdDpzY3AiOlswLDgsOSwxNywyM10sImV4cCI6MTczMzUzMTk5NywiaWF0IjoxNjcwNDU5OTk3LCJpc3MiOiJodHRwczovL2FjY291bnRzLm5pbnRlbmRvLmNvbSIsImp0aSI6MTA2MzczMzE0OTIsInN1YiI6IjVhZThmN2E3OGIwY2NhNGQiLCJhdWQiOiI3MWI5NjNjMWI3YjZkMTE5IiwidHlwIjoic2Vzc2lvbl90b2tlbiJ9.XsXMV16Rf4rMHj7CPPesX0SmINp8FZOhFRXmyPVP1kk"
+const oshake: string = "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NzAxNDUyMjksImp0aSI6MTA2MDM4NjI4NTEsInN0OnNjcCI6WzAsOCw5LDE3LDIzXSwidHlwIjoic2Vzc2lvbl90b2tlbiIsImV4cCI6MTczMzIxNzIyOSwiYXVkIjoiNzFiOTYzYzFiN2I2ZDExOSIsImlzcyI6Imh0dHBzOi8vYWNjb3VudHMubmludGVuZG8uY29tIiwic3ViIjoiNDAyMmNlZjg0M2Y1OGM5MSJ9.l8reHGmJ3UsYSW5a2ergz-PjXdNnQphhzKdnogXfUww"
 
 function openURL(token: string) {
-  window.open(`npf0c1afa76bd1a3c9b://session_token=${token}`, "_self")
+  window.open(`${identifier}://session_token=${token}`, "_self")
 }
+
+function backupURL() {
+  window.open(`${identifier}://backup_realm`, "_self")
+}
+
+function shareAccont() {
+  window.open(`${identifier}://share_account`, "_self")
+}
+
 
 </script>
 
@@ -37,30 +47,40 @@ function openURL(token: string) {
           <IonTitle size="large">Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <h1>For Reviewer</h1>
-      <p>Salmonia3+ has two ways sign in method, one is using Custom URL Scheme, the other is with id and password.</p>
-      <h3>1. Sign in with Custom URL Scheme(Recommend)</h3>
-      <IonButton expand="block" shape="round" @click="openURL(tkgling)">{{ t("open_url.title") }}</IonButton>
-      <h1>2. Sign in with id and password</h1>
+      <h1>開発者向けツール</h1>
+      <p>本ツールは開発者及びデバッガー向けのツールです。</p>
+      <h2>データベースバックアップ</h2>
+      <IonButton expand="block" shape="round" @click="openURL(tkgling)">バックアップ</IonButton>
+      <p>データベース自体のバックアップを取得するリンクです。アプリがクラッシュして動作しない場合などに使えます。</p>
+      <h2>アカウント情報共有</h2>
+      <IonButton expand="block" shape="round" @click="openURL(tkgling)">アカウント情報共有</IonButton>
+      <p>開発者がテストできるようにアカウント情報を共有します。このアカウント情報には以下のものが含まれます。カッコ内は有効期限です。この中で利用するのはセッショントークンです。</p>
       <ul>
-        <li>1. Enter id and password of Nintendo Switch Online.</li>
-        <li>2. Nintendo send the verification code.</li>
-        <li>3. Open this <a href="https://m.kuku.lu/" target="_blank">link</a>.</li>
-        <li>4. Click `Sign in to another account`</li>
-        <li>5. Enter id and password of `m.kuku.lu`</li>
-        <li>6. The website confirm `Do you want to merge your email address and email into the account you are trying to
-          login?`, click `Yes`.</li>
-        <li>7. Open <a href="https://m.kuku.lu/recv.php" target="_blacnk">Inbox</a>.</li>
-        <li>8. You can check the verification code sent from Nintendo.</li>
+        <li>1. ニックネーム</li>
+        <li>2. メンバーシップ加入状況</li>
+        <li>3. フレンドコード</li>
+        <li>4. サムネイル画像</li>
+        <li>5. ニンテンドースイッチアカウントID</li>
+        <li>6. スプラトゥーン2用トークン(24時間)</li>
+        <li>7. スプラトゥーン3用トークン(2時間)</li>
+        <li>8. ゲームサービストークン(2時間)</li>
+        <li>9. ゲームウェブトークン(6.5時間)</li>
+        <li>10. セッショントークン(730日)</li>
       </ul>
+      <p>トークンを利用することでユーザーの生年月日、性別、言語、国を特定することができます。氏名、住所、決済情報などは特定できません。</p>
+      <h2>強制サインイン</h2>
+      <p>通常のログインプロセスをスキップしてデモ用のアカウントでサインインします。</p>
+      <IonButton expand="block" shape="round" @click="openURL(tkgling)">しんさとおして</IonButton>
+      <IonButton expand="block" shape="round" @click="openURL(oshake)">きたーん(☆Д☆)</IonButton>
     </IonContent>
   </IonPage>
 </template>
 
 <style lang="scss" scoped>
 ion-button {
-  width: 200px;
-  margin: 0 auto;
+  width: 160px;
+  height: 40px;
+  margin: 20px auto;
 }
 
 ion-text {
