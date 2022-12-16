@@ -40,37 +40,39 @@ function shareURL() {
       </IonToolbar>
     </IonHeader>
 
-    <IonContent :fullscreen="true" class="ion-padding">
+    <IonContent :fullscreen="false" class="ion-padding">
       <IonHeader collapse="condense">
         <IonToolbar>
           <IonTitle size="large">Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <h1>開発者向けツール</h1>
-      <p>本ツールは開発者及びデバッガー向けのツールです。</p>
-      <h2>データベースバックアップ</h2>
-      <IonButton expand="block" shape="round" @click="backupURL">バックアップ</IonButton>
-      <p>データベース自体のバックアップを取得するリンクです。アプリがクラッシュして動作しない場合などに使えます。</p>
-      <h2>アカウント情報共有</h2>
-      <IonButton expand="block" shape="round" @click="shareURL">アカウント情報共有</IonButton>
-      <p>開発者がテストできるようにアカウント情報を共有します。このアカウント情報には以下のものが含まれます。カッコ内は有効期限です。この中で利用するのはセッショントークンです。</p>
-      <ul>
-        <li>1. ニックネーム</li>
-        <li>2. メンバーシップ加入状況</li>
-        <li>3. フレンドコード</li>
-        <li>4. サムネイル画像</li>
-        <li>5. ニンテンドースイッチアカウントID</li>
-        <li>6. スプラトゥーン2用トークン(24時間)</li>
-        <li>7. スプラトゥーン3用トークン(2時間)</li>
-        <li>8. ゲームサービストークン(2時間)</li>
-        <li>9. ゲームウェブトークン(6.5時間)</li>
-        <li>10. セッショントークン(730日)</li>
-      </ul>
-      <p>トークンを利用することでユーザーの生年月日、性別、言語、国を特定することができます。氏名、住所、決済情報などは特定できません。</p>
-      <h2>強制サインイン</h2>
-      <p>通常のログインプロセスをスキップしてデモ用のアカウントでサインインします。</p>
-      <IonButton expand="block" shape="round" @click="openURL(tkgling)">しんさとおして</IonButton>
-      <IonButton expand="block" shape="round" @click="openURL(oshake)">きたーん(☆Д☆)</IonButton>
+      <div class="content-container">
+        <h1>開発者向けツール</h1>
+        <p>本ツールは開発者及びデバッガー向けのツールです。</p>
+        <h2>データベースバックアップ</h2>
+        <IonButton expand="block" shape="round" @click="backupURL">バックアップ</IonButton>
+        <p>データベース自体のバックアップを取得するリンクです。アプリがクラッシュして動作しない場合などに使えます。</p>
+        <h2>アカウント情報共有</h2>
+        <IonButton expand="block" shape="round" @click="shareURL">アカウント情報共有</IonButton>
+        <p>開発者がテストできるようにアカウント情報を共有します。このアカウント情報には以下のものが含まれます。カッコ内は有効期限です。この中で利用するのはセッショントークンです。</p>
+        <ul>
+          <li>1. ニックネーム</li>
+          <li>2. メンバーシップ加入状況</li>
+          <li>3. フレンドコード</li>
+          <li>4. サムネイル画像</li>
+          <li>5. ニンテンドースイッチアカウントID</li>
+          <li>6. スプラトゥーン2用トークン(24時間)</li>
+          <li>7. スプラトゥーン3用トークン(2時間)</li>
+          <li>8. ゲームサービストークン(2時間)</li>
+          <li>9. ゲームウェブトークン(6.5時間)</li>
+          <li>10. セッショントークン(730日)</li>
+        </ul>
+        <p>トークンを利用することでユーザーの生年月日、性別、言語、国を特定することができます。氏名、住所、決済情報などは特定できません。</p>
+        <h2>強制サインイン</h2>
+        <p>通常のログインプロセスをスキップしてデモ用のアカウントでサインインします。</p>
+        <IonButton expand="block" shape="round" @click="openURL(tkgling)">しんさとおして</IonButton>
+        <IonButton expand="block" shape="round" @click="openURL(oshake)">きたーん(☆Д☆)</IonButton>
+      </div>
     </IonContent>
   </IonPage>
 </template>

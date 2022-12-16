@@ -13,12 +13,9 @@ ion-text {
   font-size: 14px;
 }
 
-ion-app {
-  margin: 0 auto;
-}
-
-.ion-page {
+.content-container {
   max-width: 600px;
+  margin: 0 auto;
 }
 
 ion-img {
